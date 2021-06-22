@@ -43,7 +43,9 @@ table {
 }
 
 /*---------------------------screw----------------------------*/
-
+.wrapper {
+	width: 1406px;
+}
 .screw {
 	position: relative;
 	margin: 50px 0 0 35%;	
