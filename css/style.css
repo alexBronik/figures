@@ -213,12 +213,13 @@ table {
 }
 .flag-1 {
 	position: absolute;
-    width: 300px;
-    height: 319px;
+    width: 265px;
+    height: 320px;
     top: -95%;
-    left: 25%;
+    left: 333px;
     background-color: red;
-    border-radius: 50%;	
+    border-radius: 50%;
+	background: radial-gradient(circle at 174% 50%, transparent 73%, red 70%);
 }
 .flag-1::after {
 	content: "";
@@ -250,15 +251,9 @@ table {
 	top: -44%;
     left: 401px;
 	transform: rotate(45deg);
+	background: radial-gradient(circle at -22% 122%, transparent 72%, red 50%);
 }
-.flag-3::before {
-	content: "";
-    display: block;
-    position: absolute;
-    background: radial-gradient(circle at -22% 122%, transparent 72%, red 50%);
-    width: 170px;
-    height: 170px;
-}
+
 .section-2 div,
 .section-2 div::after,
 .section-2 div::before {	
