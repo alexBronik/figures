@@ -1,0 +1,284 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------------------screw----------------------------*/
+
+.screw {
+	position: relative;
+	margin: 50px 0 0 35%;	
+	width: 85px;
+	height: 200px;
+	background-color: green;
+	border-radius: 100% 0 0 100%;
+}
+.screw:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 150px;
+	height: 100px;
+	left: 100%;
+	top: 50%;
+	transform: translate(0, -50%);
+	background-color: green;
+	background-image: repeating-linear-gradient(-45deg, transparent, transparent 30px, black 0, black 36px)
+}
+.screw:before {
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: white;
+	width: 40px;
+	height: 20px;
+	right: 100%;
+	left: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+
+
+/*---------------------------screw----------------------------*/
+.screw-nut {
+	position: relative;
+	margin: 30px 0 0 33%;
+    width: 145px;
+    height: 0px;
+    border-top: 100px solid transparent;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 110px solid green;
+}
+.screw-nut::before {
+	content: "";
+	margin: 110px 0 0 -60px;
+	width: 145px;
+	height: 0px;
+	display: block;
+	border-top: 100px solid transparent;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 110px solid green;
+	transform: rotate(180deg);
+}
+.screw-nut::after {
+	content: "";
+	display: block;
+	position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+	top: 50px;
+    left: 14px;
+}
+
+
+
+/*---------------------------screw----------------------------*/
+.wrench-1 {
+	display: inline-block;
+	margin: 221px 0 0 32%;
+	width: 275px;
+	height: 275px;
+	background-color: red;
+	border-radius: 50%;
+	position: relative;
+}
+.wrench-1::before {
+	content: "";
+	display: block;
+	width: 175px;
+	height: 111px;
+	background-color: white;
+	position: absolute;
+	top: 40px;
+	left: 6px;
+	transform: rotate(45deg);
+	border-radius: 0 30% 30% 0;
+}
+.wrench-2 {
+	display: inline-block;
+	position: absolute;
+	width: 400px;
+	height: 120px;
+	background-color: red;
+	transform: rotate(45deg);
+	top: 111%;
+    left: 60%;
+	border-radius: 0 40% 40% 0;
+}
+.wrench-2::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	border-radius: 50%;
+	left: 84%;
+    top: 45px;
+}
+
+
+
+/*---------------------------boat----------------------------*/
+.boat {
+	font-size: 0;
+	margin: 44% 0 5% 11%;
+	position: relative;
+}
+.s {
+	display: inline-block;
+	vertical-align: bottom;
+}
+.section-1 {
+	width: 0px;
+    height: 0px;    
+    border-top: 42px solid transparent;
+    border-left: 100px solid transparent;
+    border-right: 125px solid red;
+    border-bottom: 106px solid transparent;
+}
+.section-2 {
+	width: 450px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.section-3 {
+	width: 0px;
+    height: 69px;   
+    transform: rotate(45deg);
+    border-top: 100px solid red;
+    border-left: 43px solid red;
+    border-right: 46px solid red;
+    border-bottom: 46px solid red;
+}
+.mast {
+	position: absolute;
+	width: 15px;
+	height: 323px;
+	background-color: red;
+	top: -95%;
+    left: 38%;
+	z-index: 3;
+}
+.flag-1 {
+	position: absolute;
+    width: 300px;
+    height: 319px;
+    top: -95%;
+    left: 25%;
+    background-color: red;
+    border-radius: 50%;	
+}
+.flag-1::after {
+	content: "";
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 378px;
+    background-color: white;
+    border-radius: 50%;
+    top: -9%;
+    left: 29%;
+}
+.flag-2 {
+	position: absolute;
+    z-index: 1;
+    width: 80px;
+    height: 0;    
+    border-top: 35px solid blue;
+    border-right: 46px solid transparent;
+    border-bottom: 35px solid yellow;
+    top: -95%;
+    left: 485px;
+}
+.flag-3 {
+	position: absolute;
+    z-index: 1;
+	width: 170px;
+	height: 170px;	
+	top: -44%;
+    left: 401px;
+	transform: rotate(45deg);
+}
+.flag-3::before {
+	content: "";
+    display: block;
+    position: absolute;
+    background: radial-gradient(circle at -22% 122%, transparent 72%, red 50%);
+    width: 170px;
+    height: 170px;
+}
+.section-2 div,
+.section-2 div::after,
+.section-2 div::before {	
+	border-top: 30px solid blue;
+    border-left: 30px solid green;
+    border-right: 30px solid black;
+    border-bottom: 30px solid yellow;
+	border-radius: 50%;
+}
+.section-2 div:first-child {
+	margin-right: 180px;
+}
+.section-2 div:first-child::after,
+.section-2 div:last-child::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 20%;	 
+}
+.section-2 div:first-child::after {
+	left: 140px;
+}
+.section-2 div:last-child::before {
+	right: 140px;
+}
