@@ -221,17 +221,7 @@ table {
     border-radius: 50%;
 	background: radial-gradient(circle at 174% 50%, transparent 73%, red 70%);
 }
-.flag-1::after {
-	content: "";
-    display: block;
-    position: absolute;
-    width: 300px;
-    height: 378px;
-    background-color: white;
-    border-radius: 50%;
-    top: -9%;
-    left: 29%;
-}
+
 .flag-2 {
 	position: absolute;
     z-index: 1;
